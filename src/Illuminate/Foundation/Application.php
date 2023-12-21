@@ -23,7 +23,7 @@ use Symfony\Component\HttpFoundation\Request as SymfonyRequest;
 use Symfony\Component\HttpKernel\Exception\HttpException;
 use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 use Symfony\Component\HttpKernel\HttpKernelInterface;
-use Symfony\Component\HttpFoundation\Response;
+use Symfony\Component\HttpFoundation\Response as SymfonyResponse;
 
 class Application extends Container implements ApplicationContract, HttpKernelInterface
 {
@@ -900,7 +900,7 @@ class Application extends Container implements ApplicationContract, HttpKernelIn
     /**
      * {@inheritdoc}
      */
-	public function handle(SymfonyRequest $request, int $type = self::MASTER_REQUEST, bool $catch = true)
+	public function handle(SymfonyRequest $request, int $type = self::MASTER_REQUEST, bool $catch = true): SymfonyResponse
     {
         return $this[HttpKernelContract::class]->handle(Request::createFromBase($request));
     }
