@@ -1,5 +1,4 @@
 <?php
-declare(strict_types=1);
 
 namespace Illuminate\Support;
 
@@ -1275,9 +1274,9 @@ class Collection implements ArrayAccess, Enumerable
      * @param  mixed  $key
      * @return bool
      */
-    public function offsetExists($key): bool
+    public function offsetExists($key)
     {
-        return (bool) array_key_exists($key, $this->items);
+        return array_key_exists($key, $this->items);
     }
 
     /**

@@ -1,21 +1,21 @@
 {
-    "name": "laravel/framework",
+    "name": "micdech/framework",
     "description": "The Laravel Framework.",
-    "keywords": ["framework", "laravel"],
+    "keywords": ["framework", "laravel", "fork", "6.x"],
     "license": "MIT",
     "homepage": "https://laravel.com",
     "support": {
-        "issues": "https://github.com/laravel/framework/issues",
-        "source": "https://github.com/laravel/framework"
+        "issues": "https://github.com/micdech/framework/issues",
+        "source": "https://github.com/micdech/framework"
     },
     "authors": [
         {
             "name": "Taylor Otwell",
-            "email": "taylor@laravel.com"
+            "email": "micdech@gmail.com"
         }
     ],
     "require": {
-        "php": "^7.2.5|^8.0",
+        "php": "^8.2",
         "ext-json": "*",
         "ext-mbstring": "*",
         "ext-openssl": "*",
