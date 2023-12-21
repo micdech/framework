@@ -899,7 +899,7 @@ class Application extends Container implements ApplicationContract, HttpKernelIn
     /**
      * {@inheritdoc}
      */
-    public function handle(SymfonyRequest $request, $type = self::MASTER_REQUEST, bool $catch = true)
+	public function handle(SymfonyRequest $request, int $type = self::MASTER_REQUEST, bool $catch = true) : Symfony\Component\HttpFoundation\Response
     {
         return $this[HttpKernelContract::class]->handle(Request::createFromBase($request));
     }
