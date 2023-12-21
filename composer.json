@@ -86,9 +86,9 @@
         "moontoast/math": "^1.1",
         "orchestra/testbench-core": "^4.8",
         "pda/pheanstalk": "^4.0",
-        "phpunit/phpunit": "^7.5.15|^8.4|^9.3.3",
+        "phpunit/phpunit": "^9.3.3",
         "predis/predis": "^1.1.1",
-        "symfony/cache": "^4.3.4"
+        "symfony/cache": "^6.0"
     },
     "autoload": {
         "files": [
